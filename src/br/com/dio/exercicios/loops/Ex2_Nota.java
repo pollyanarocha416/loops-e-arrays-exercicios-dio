@@ -16,11 +16,14 @@ public class Ex2_Nota {
 
         System.out.println("Nota: ");
         nota = scan.nextInt();
-
-        while(nota < 0 | nota > 10) {
+//                    ou            and
+        while(nota < 0 | nota > 10 && nota != 1) {
             System.out.println("Nota Inválida! Digite novamente: ");
             nota = scan.nextInt();
         }
+        
+
+        
 
     }
 
