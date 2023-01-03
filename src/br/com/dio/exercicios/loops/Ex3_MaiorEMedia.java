@@ -17,7 +17,7 @@ public class Ex3_MaiorEMedia {
 
         int count = 0;
         do {
-            System.out.println("Número: ");
+            System.out.print("Número: ");
             numero = scan.nextInt();
 
             soma = soma + numero;
@@ -30,5 +30,6 @@ public class Ex3_MaiorEMedia {
         System.out.println("Maior: " + maior);
         System.out.println("Média: " + (soma/5));
 
+        
     }
 }
