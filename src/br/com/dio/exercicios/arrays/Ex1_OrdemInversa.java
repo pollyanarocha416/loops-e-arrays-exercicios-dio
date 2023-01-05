@@ -12,9 +12,11 @@ public class Ex1_OrdemInversa {
 
         System.out.print("Vetor: ");
         int count =0;
+        // enquanto a conta for menor q o comprimento do vetor
+        // ele vai continuar
         while(count < (vetor.length)) {
             System.out.print(vetor[count] + " ");
-            count++;
+            count++;// a acada rodada ele acrecenta
         }
 
         System.out.print("\nVetor: ");
