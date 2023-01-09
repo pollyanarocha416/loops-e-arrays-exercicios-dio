@@ -7,7 +7,7 @@ Ao final mostre os números e seus sucessores.
 */
 public class NumerosAleatorios {
     public static void main(String[] args) {
-        Random random = new Random(); //classe para gerar números aleatórios
+        Random random = new Random(); //gerar números aleatórios
 
         int[] numeros = new int[20]; //array com 20 posições
 
@@ -29,5 +29,8 @@ public class NumerosAleatorios {
         for (int numero : numeros) { //para cada numero dentro do array de números
             System.out.print((numero + 1) + " "); //adicione o valor 1 ao número e imprima esse novo valor
         }
+
     }
+    
+    
 }
