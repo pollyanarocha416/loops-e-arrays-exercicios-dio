@@ -13,23 +13,33 @@ public class questao3 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        String[] letras = new String[6];
-
         // o nome tem q ter no minimo 3 caractere
-
-        System.out.println("Digite seu nome: ");
-        String nome = scan.next();
-
-        System.out.println("Digite seu idade: ");
-        int idade = scan.nextInt();
         
-        System.out.println("Digite seu Salario: ");
-        int Salario = scan.nextInt();
-        
-        System.out.println("Digite seu sexo: ");
-        String sexo = scan.next();
 
-        System.out.println("Digite seu Estado Civil: S(solteiro), C(casado), V(viuvo) ou D(divorciado) ");
-        String estadocvl = scan.next();
+        String name;
+        do { // Keep asking for the name until it is valid
+        System.out.print("Enter your name: ");
+        name = scan.nextLine(); // Read in a line of input
+
+        if (name.length() < 3) {
+            System.out.println("Name must be at least 3 characters long. Please try again.");
+        }
+        } while (name.length() < 3); // Repeat if the name is not long enough
+
+        System.out.println("Valid name!");
+    
+
+        int salario;
+        do {
+            System.out.println("Digite seu Salario: ");
+            salario = scan.nextInt();
+
+            if (salario == 0) {
+                System.out.println("salario nao valido");
+            }
+            } while (salario == 0);
+            System.out.println("Valid salario!");
+        
+        
     }
 }
